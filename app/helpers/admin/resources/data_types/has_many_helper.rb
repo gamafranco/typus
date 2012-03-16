@@ -43,7 +43,7 @@ module Admin::Resources::DataTypes::HasManyHelper
 
   def set_has_many_resource_actions
     @resource_actions = [["Edit", { :action => "edit", :_popup => true }, { :class => 'iframe_with_page_reload' }],
-                         ["Show", { :action => "show", :_popup => true }, { :class => 'iframe'}],
+                         ["Show", { :action => "show" }, { :class => 'iframe'}],
                          ["Trash", { :action => "destroy" }, { :confirm => "Trash?" } ]]
   end
 
